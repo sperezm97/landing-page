@@ -1,0 +1,51 @@
+:root {
+  --back-ground: black;
+}
+
+body {
+  @font-face {
+    font-family: Roboto, Arial, Helvetica;
+  }
+  margin: 0;
+}
+
+/* This is a single-line comment */
+nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+}
+
+ul.nav_container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li.nav_item {
+  width: 250;
+}
+
+section {
+  display: flex;
+  flex: 1;
+  height: 1920px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#footer_container {
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+}
+
+#footer_container {
+  flex-direction: column;
+}
