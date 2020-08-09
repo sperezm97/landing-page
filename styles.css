@@ -1,51 +1,144 @@
 :root {
-  --back-ground: black;
+  --primary-color: #d1ae6b;
+  --secondary-color: #b1afaf;
+  --white: #f7f5f0;
+  --black: #3b3838;
+  --text: #4c3a27;
 }
 
 body {
-  @font-face {
-    font-family: Roboto, Arial, Helvetica;
-  }
+  font-family: "LegacySanITC-Book", "Arial", "Helvetica Neue", "Helvetica",
+    "sans-serif";
   margin: 0;
 }
+p {
+  color: var(--text);
+  font-size: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-/* This is a single-line comment */
+h6 {
+  font-size: 1.1rem;
+  color: var(--text);
+}
+h5 {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+h4 {
+  font-size: 1.3rem;
+  color: var(--text);
+}
+h3 {
+  font-size: 1.4rem;
+  color: var(--text);
+}
+h2 {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+h1 {
+  font-size: 2rem;
+  color: var(--text);
+}
+
+/* Nav bar */
 nav {
-  position: fixed;
-  height: 100px;
-  width: 100%;
-}
-
-ul.nav_container {
   display: flex;
-  flex: 1;
-  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  top: 0;
+  background: var(--primary-color);
+  margin-bottom: 50px;
 }
 
-li.nav_item {
-  width: 250;
+nav a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
+nav a:hover {
+  color: var(--white);
+}
+
+nav a:active {
+  color: var(--text);
+}
+
+nav a:visited {
+  color: var(--text);
+}
+
+nav a:link {
+  color: var(--text);
+}
+.nav_offset {
+  margin-bottom: 50px;
+}
+
+/* Sections */
 section {
   display: flex;
   flex: 1;
-  height: 1920px;
+}
+
+/* quienes somos */
+section.container {
+  flex-direction: column;
+  align-items: center;
+  height: 18.75rem;
+  margin: 0 6rem;
+}
+
+section h2 {
+  font-size: 4rem;
+  color: var(--text);
+}
+
+image_container {
+  margin: 0 6rem;
 }
 
 /* Footer */
 footer {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-#footer_container {
+.footer_container {
+  flex: 1;
   justify-content: space-between;
   align-content: center;
   flex-direction: row;
 }
 
-#footer_container {
+.footer_middle {
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-color: black;
+}
+
+/* utils */
+
+.center {
+  align-items: center;
+  justify-items: center;
+}
+
+.column {
   flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
 }
