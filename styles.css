@@ -23,29 +23,41 @@ p {
 h6 {
   font-size: 1.1rem;
   color: var(--text);
+  margin: 0;
 }
 h5 {
   font-size: 1.2rem;
   color: var(--text);
+  margin: 0;
 }
 h4 {
   font-size: 1.3rem;
   color: var(--text);
+  margin: 0;
 }
 h3 {
   font-size: 1.4rem;
   color: var(--text);
+  margin: 0;
 }
 h2 {
   font-size: 1.5rem;
   color: var(--text);
+  margin: 0;
 }
 h1 {
   font-size: 2rem;
   color: var(--text);
+  margin: 0;
 }
 
-/* Nav bar */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: var(--primary-color);
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -58,6 +70,12 @@ nav {
   background: var(--primary-color);
   margin-bottom: 50px;
 }
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nav bar */
 
 nav a {
   display: block;
@@ -70,17 +88,12 @@ nav a:hover {
   color: var(--white);
 }
 
-nav a:active {
+nav a:active,
+a:visited,
+a:link {
   color: var(--text);
 }
 
-nav a:visited {
-  color: var(--text);
-}
-
-nav a:link {
-  color: var(--text);
-}
 .nav_offset {
   margin-bottom: 50px;
 }
@@ -94,40 +107,57 @@ section {
 /* quienes somos */
 section.container {
   flex-direction: column;
-  align-items: center;
   height: 18.75rem;
-  margin: 0 6rem;
+  margin: 0 8rem;
 }
 
 section h2 {
   font-size: 4rem;
   color: var(--text);
+  text-align: center;
 }
 
-image_container {
-  margin: 0 6rem;
+section h6 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.image_ours {
+  height: 40rem;
+  width: 60%;
+  margin-left: 5rem;
 }
 
 /* Footer */
-footer {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
+
+.social_icon {
+  height: 50px;
+  width: 50px;
 }
 
-.footer_container {
-  flex: 1;
-  justify-content: space-between;
-  align-content: center;
-  flex-direction: row;
+.social_logo {
+  height: 9rem;
+  width: 7rem;
 }
 
-.footer_middle {
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-color: black;
+.social_icons_container {
+}
+.social_info_container {
+  margin-left: 20px;
+}
+footer div a:active,
+a:visited,
+a:link {
+  color: var(--text);
+  text-decoration: none;
+}
+footer div a:hover {
+  color: var(--white);
 }
 
+footer div a {
+  margin: 10px 0;
+}
 /* utils */
 
 .center {
@@ -141,4 +171,8 @@ footer {
 
 .row {
   flex-direction: row;
+}
+
+.display {
+  display: flex;
 }
